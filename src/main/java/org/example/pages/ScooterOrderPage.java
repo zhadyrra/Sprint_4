@@ -131,7 +131,6 @@ public class ScooterOrderPage {
         new WebDriverWait(driver, 5)
                 .until(ExpectedConditions.elementToBeClickable(buttonYesInOrderModalPage));
         driver.findElement(buttonYesInOrderModalPage).click();
-        System.out.println("clicked su");
     }
 
     public void fillFieldsToOrder(String name,String surname, String address, String metroStation,String mobileNumber,

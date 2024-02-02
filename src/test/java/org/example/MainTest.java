@@ -15,12 +15,12 @@ public class MainTest {
     @Before
     public void setUp() {
         WebDriverManager.chromedriver().setup();
-        
-       driver = new ChromeDriver();
-        driver.get("https://qa-scooter.praktikum-services.ru/");
 
-        // driver = new SafariDriver();
-        //driver.navigate().to("https://qa-scooter.praktikum-services.ru/");
+//        driver = new ChromeDriver();
+//        driver.get("https://qa-scooter.praktikum-services.ru/");
+
+        driver = new SafariDriver();
+        driver.navigate().to("https://qa-scooter.praktikum-services.ru/");
     }
 
     @After
