@@ -3,7 +3,6 @@ package org.example.pages;
 import org.example.MainTest;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ScooterOrderPageTest extends MainTest {
@@ -25,7 +24,7 @@ public class ScooterOrderPageTest extends MainTest {
         String successText = scooterOrderPage.getSuccessText();
         System.out.println(successText);
 
-        assertThat("Error", successText, containsString("оформлен"));
+        assertThat("Ошибка. До успешного оформления не дошли", successText.contains("оформлен"));
 
 
     }

@@ -39,6 +39,6 @@ public class FaqPageTest extends MainTest {
         faqPage.scrollPageToFaq();
         faqPage.clickFaqList(questionIndex);
         String actual = faqPage.getFaqAnswer(answerIndex);
-        assertEquals(actual, answer);
+        assertEquals(answer, actual);
     }
 }
